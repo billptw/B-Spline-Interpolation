@@ -237,8 +237,8 @@ def display_spline(input_coord, spline_cp, spline_points):
     #plt.axis('equal')
     plt.show()
 
-
-input_coord = read_input('input')
-[spline, spline_cp, spline_points] = get_spline(input_coord)
-display_spline(input_coord, spline_cp, spline_points)
-write_output(spline, 'cubic')
+if __name__ == "__main__":
+    input_coord = read_input('input')
+    [spline, spline_cp, spline_points] = get_spline(input_coord)
+    display_spline(input_coord, spline_cp, spline_points)
+    write_output(spline, 'cubic')
